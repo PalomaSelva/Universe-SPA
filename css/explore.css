@@ -1,0 +1,16 @@
+nav ul li:nth-child(4) a{
+    color: var(--details);
+}
+.container{
+    background-image: url(../IMG/mountains-universe-3.png);
+}
+.animation-three{
+    height: 3px;
+    background-color: #1f6b85;
+    position: relative;
+    top: .4rem;
+    animation-name: menuBorder;
+    animation-duration: .4s;
+    animation-timing-function: ease-in-out;
+    border-radius: 3px;
+}

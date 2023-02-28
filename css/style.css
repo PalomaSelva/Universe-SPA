@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root, button{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    --primary-color:#E1E1E6;
+    --nav-focus-off:#C4C4CC;
+    --details:#FFFFFF;
+    --btn-text-hover:#00546D;
+}
+.container{
+    color: var(--primary-color);
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover; /*Animar isso depois*/
+    background-image: url(../IMG/mountains-universe-1.png);
+    background-size: 130%;
+    animation: backgroundMove 25s infinite ease-in-out;
+}
+nav{
+    padding: 4rem 1rem;
+    font-size: 2.1rem;
+    width: min(90vw, 40.6rem);
+}
+nav ul{
+    width: inherit;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+}
+nav li{
+    text-align: center;
+}
+nav a{
+    color: var(--nav-focus-off);
+    text-decoration: none;
+    padding: 0 .35rem;
+}
+
+h1{
+    font-size: 4.8rem;
+    text-align: center;
+}
+
+
+.content{
+    margin:5rem 2rem ;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    width: min(90vw,63.8rem);
+    animation: leftToRight .7s normal ease-out;
+}
+p{
+    font-size: 1.8rem;
+    line-height: 2.88rem;
+    font-weight: 400;
+}
+
+
+@keyframes menuBorder{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes leftToRight {
+    0%{
+        translate:8rem 0rem ;
+        opacity: 0;
+    }
+    100%{
+        translate:0rem 0rem ;
+        opacity: 1;
+    }
+}
+@keyframes backgroundMove {
+    0%{
+        background-position: left ;
+    }
+    50%{
+        background-position: right ;
+    }
+    100%{
+        background-position: left ;
+        
+    }
+
+}
