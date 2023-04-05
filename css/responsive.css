@@ -1,0 +1,12 @@
+@media only screen and (min-width: 600px) {
+    .content{
+        margin:4.5rem 10.2rem ;
+    }
+    nav{
+        padding: 4rem 7.2rem;
+    }
+    .p{
+        line-height: 2.88rem;
+        font-weight: 400;
+    }
+  }
